@@ -10,26 +10,22 @@
       color: white;
     }
 
-    h2 {
-      color: black;
-    }
-
+  
     a {
       color: white;
       text-decoration: none;
-      padding: 14px 16px;
+      padding: 15px 55px;
       display: inline-block;
     }
 
     #navbar {
       background-color: #333;
       position: fixed;
-      top: 0;
       width: 100%;
     }
 
     #navbar a:hover {
-      background-color: #ddd;
+      background-color: white;
       color: black;
     }
 
@@ -50,7 +46,7 @@
     }
 
     #section2 {
-      background-color: #bbb5a7;
+      background-color: darkred;
     }
 
     #section3 {
@@ -60,40 +56,47 @@
     #section4 {
       background-color: #787254;
     }
+    
+     img {
+      max-width: 50%;
+      height: auto;
+       
   </style>
 </head>
 <body>
   <div id="navbar">
-    <a href="#section0" onclick="scrollToSection(0)">Home</a>
-    <a href="#section1" onclick="scrollToSection(1)">About Me</a>
-    <a href="#section2" onclick="scrollToSection(2)">Hobbies</a>
-    <a href="#section3" onclick="scrollToSection(3)">Goals</a>
-    <a href="#section4" onclick="scrollToSection(4)">Contact</a>
+    <a href="#section0" onclick="scrollToSection(0)">About</a>
+    <a href="#section1" onclick="scrollToSection(1)">History</a>
+    <a href="#section2" onclick="scrollToSection(2)">Performance</a>
+    <a href="#section3" onclick="scrollToSection(3)">Fuel Efficiency + Reliablity</a>
+    <a href="#section4" onclick="scrollToSection(4)">Conclusion</a>
   </div>
 
   <section id="section0">
-    <h2>Welcome to My Website!</h2>
-    <p>This is the main section. You can add some introductory content here.</p>
+    <h2>Why Choose a Honda Civic?</h2>
+    <p>Welcome to the ultimate guide on why everyone should get a Honda Civic!</p>
+    <img src="https://i.imgur.com/lbERP1a.jpeg" alt="Honda Civic">
+    
   </section>
 
   <section id="section1">
-    <h2>About Me</h2>
-    <p>Insert information about yourself here.</p>
+    <h2>Introduction</h2>
+    <p>Discover the amazing features and benefits of owning a Honda Civic.</p>
   </section>
 
   <section id="section2">
-    <h2>My Hobbies</h2>
-    <p>Share your hobbies and interests in this section.</p>
-  </section>
+    <h2>Performance</h2>
+    <p>Explore the outstanding performance that sets the Honda Civic apart from the rest.</p>
+  </section> 
 
   <section id="section3">
-    <h2>My Goals</h2>
-    <p>Outline your goals and aspirations in this section.</p>
+    <h2>Fuel Efficiency</h2>
+    <p>Learn about the impressive fuel efficiency that makes the Honda Civic an economic choice.</p>
   </section>
 
   <section id="section4">
-    <h2>Contact Me</h2>
-    <p>Provide contact information or a contact form here.</p>
+    <h2>Conclusion</h2>
+    <p>Wrap up your journey with a compelling conclusion on why the Honda Civic is the ideal choice for everyone.</p>
   </section>
 
   <script>
