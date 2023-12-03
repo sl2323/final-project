@@ -1,9 +1,6 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
@@ -30,88 +27,73 @@
     }
 
     section {
-      height: 100vh;
+      height: 70vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: left;
     }
 
-
-#section0 {
-  background-image: url("https://i.imgur.com/69WpPgy.jpeg");
-  background-size: cover;
-  color: black;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  
-}
-
-#section0 h1 {
-  color: black;
-  margin: 600px;
-	margin-top: 0px;
-  width: 100%;
-}
-
-}
-
-    #section1 {
+    #section0 {
       background-color: #423711;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
 
-    #section2 {
+    #section0 h1 {
+      color: black;
+      width: 100%; /* Adjust the width as needed */
+    }
+
+    #section0 img {
+      max-width: 50%;
+      height: auto;
+    }
+
+    #section1 {
       background-color: darkred;
     }
 
-    #section3 {
+    #section2 {
       background-color: #8b2e25;
     }
 
-    #section4 {
+    #section3 {
       background-color: #787254;
     }
-    
-     img {
-      max-width: 50%;
-       height: auto;}
-       
   </style>
 </head>
 <body>
   <div id="navbar">
-    <a href="#section0" onclick="scrollToSection(0)">About</a>
-    <a href="#section1" onclick="scrollToSection(1)">History</a>
-    <a href="#section2" onclick="scrollToSection(2)">Performance</a>
-    <a href="#section3" onclick="scrollToSection(3)">Fuel Efficiency + Reliablity</a>
-    <a href="#section4" onclick="scrollToSection(4)">Conclusion</a>
+    <a href="#section0" onclick="scrollToSection(1)">About Me!</a>
+    <a href="#section1" onclick="scrollToSection(2)">Performance</a>
+    <a href="#section2" onclick="scrollToSection(3)">Future Goals</a>
+    <a href="#section3" onclick="scrollToSection(4)">Contacts</a>
   </div>
 
   <section id="section0">
-    <h1 style="text-allign:center; height: 100px;">Why Everyone Should Get a Civic! </h1>
-    <p>Welcome to my website on why everyone should get a Honda Civic!</p>
+    <img src="https://i.imgur.com/69WpPgy.jpeg">
+    <div>
+      <h1 style="text-align: center; height: 100px;">Why Everyone Should Get a Civic!</h1>
+      <p>Welcome to my website on why everyone should get a Honda Civic!</p>
+    </div>
   </section>
 
   <section id="section1">
-    <h2>Introduction</h2>
-    <p>Discover the amazing features and benefits of owning a Honda Civic.</p>
-  </section>
-
-  <section id="section2">
     <h2>Performance</h2>
     <p>Explore the outstanding performance that sets the Honda Civic apart from the rest.</p>
   </section> 
 
-  <section id="section3">
+  <section id="section2">
     <h2>Fuel Efficiency</h2>
     <p>Learn about the impressive fuel efficiency that makes the Honda Civic an economic choice.</p>
   </section>
 
-  <section id="section4">
+  <section id="section3">
     <h2>Conclusion</h2>
     <p>Wrap up your journey with a compelling conclusion on why the Honda Civic is the ideal choice for everyone.</p>
   </section>
