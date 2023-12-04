@@ -2,6 +2,9 @@
 <html lang="eng">
   <head>
     <style>
+      html {
+  scroll-behavior: smooth;
+}
       body {
         margin: 0;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,17 +34,13 @@
         height: 65vh;
         display: flex;
         align-items: center;
-        justify-content: center;
-        text-align: left;
       }
 
       #section0 {
         background-color: grey;
         display: flex;
-        flex-direction: row;
-        align-items: center;
         padding: 20px;
-        box-sizing: border-box;
+
       }
 
       #section0 h1 {
@@ -58,33 +57,44 @@
       #section1 {
         background-color: darkred;
       }
-        #section1 h1
-      {
+        #section1 h1 {
         color: white;
-        width: 10%;
         height: 600;
         font-size: 35px;
       }
      
-  #section1 p {
-  color: white;
-  height: auto; /* Change from fixed height to auto */
-  font-size: 20px;
+ 			 #section1 p {
+  			color: white;
+  			font-size: 20px;
 }
-      #section1 h2 {
-        color: white;
-        font-size: 35px;
-            height: 600;
+  			#section1 h2 {
+ 			 color: white;
+ 			 font-size: 35px;
+ 			 height: 600;
       }
-  #section1 a {
-  color: white;
-  font-size: 20px;
-  text-decoration: underline; 
-  padding: 0; 
+ 			 #section1 a {
+  			color: white;
+  			font-size: 20px;
+  			text-decoration: underline; 
+  			padding: 0; 
 }
-      #section2 {
-        background-color: #8b2e25;
-      }
+			#section2 {
+ 			 background-color: black;
+  		flex-direction: column;
+  		justify-content: flex-start;
+  		height: 100vh; 
+}
+
+			#section2 h1 {
+  			color: white;
+  		font-size: 35px;
+}	
+
+			#section2 p {
+  			color: white;
+  			font-size: 20px;
+ 			 margin-top: 0px;
+}
 
       #section3 {
         background-color: #787254;
@@ -93,13 +103,13 @@
   </head>
   <body>
     <div id="navbar">
-      <a href="#section0" onclick="scrollToSection(1)">About Me!</a>
-      <a href="#section1" onclick="scrollToSection(2)">Education</a>
-      <a href="#section2" onclick="scrollToSection(3)">Future Goals</a>
-      <a href="#section3" onclick="scrollToSection(4)">Contacts</a>
+      <a href="#section0" onclick="scrollToSection(0)">Home</a>
+      <a href="#section1" onclick="scrollToSection(1)">About me</a>
+      <a href="#section2" onclick="scrollToSection(2)">Gallary</a>
+      <a href="#section3" onclick="scrollToSection(3)">Contacts</a>
     </div>
 
-    <section id="section0">
+    <section id="section0">  
 		<img src="me.png">
       <div>
      <h1 style="text-align: center; margin-top: -50px;">Welcome to my Personal Website!</h1>
@@ -127,17 +137,18 @@
       I also try to keep myself in shape and sometimes go workout with my friends.</p>
 
     </section>
-
-    <section id="section2">
-      <h2>Future Goals</h2>
-      <p>Learn about the impressive fuel efficiency that makes the Honda Civic an economic choice.</p>
-    </section>
+<section id="section2">
+  <h1>Gallery</h1>
+  <p>Some highlights from 2023!</p>
+  <img src="mall.png" alt="Mall Image">
+    <img src="macau.png" alt="Mall Image">
+</section>
 
     <section id="section3">
       <h2>Hobbies</h2>
       <p>Wrap up your journey with a compelling conclusion on why the Honda Civic is the ideal choice for everyone.</p>
     </section>
-
+ 
     <script>
       function scrollToSection(sectionIndex) {
         const sections = document.querySelectorAll('section');
