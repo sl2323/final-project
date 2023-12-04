@@ -1,108 +1,110 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: white;
-    }
-  
-    a {
-      color: white;
-      text-decoration: none;
-      padding: 25px 55px;
-      display: inline-block;
-    }
- 
-    #navbar { 
-      background-color: #333;
-      position: fixed;
-      width: 100%;
-    }
+  <head>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+      }
 
-    #navbar a:hover { 
-      background-color: white;
-      color: black;
-    }
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 25px 55px;
+        display: inline-block;
+      }
 
-    section {
-      height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: left;
-    }
+      #navbar {
+        background-color: #333;
+        position: fixed;
+        width: 100%; 
+      }
 
-    #section0 {
-      background-color: #423711;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-      box-sizing: border-box;
-    }
+      #navbar a:hover {
+        background-color: white;
+        color: black;
+      }
 
-    #section0 h1 {
-      color: black;
-      width: 100%; /* Adjust the width as needed */
-    }
+      section {
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+      }
 
-    #section0 img {
-      max-width: 50%;
-      height: auto;
-    }
+      #section0 {
+        background-color: grey;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        box-sizing: border-box;
+      }
 
-    #section1 {
-      background-color: darkred;
-    }
+      #section0 h1 {
+        color: white;
+        width: 100%;
+      }
 
-    #section2 {
-      background-color: #8b2e25;
-    }
+      #section0 img {
+        max-width: 55%;
+        height: auto;
+      }
 
-    #section3 {
-      background-color: #787254;
-    }
-  </style>
-</head>
-<body>
-  <div id="navbar">
-    <a href="#section0" onclick="scrollToSection(1)">About Me!</a>
-    <a href="#section1" onclick="scrollToSection(2)">Performance</a>
-    <a href="#section2" onclick="scrollToSection(3)">Future Goals</a>
-    <a href="#section3" onclick="scrollToSection(4)">Contacts</a>
-  </div>
+      #section1 {
+        background-color: darkred;
+      }
 
-  <section id="section0">
-    <img src="https://i.imgur.com/69WpPgy.jpeg">
-    <div>
-      <h1 style="text-align: center; height: 100px;">Why Everyone Should Get a Civic!</h1>
-      <p>Welcome to my website on why everyone should get a Honda Civic!</p>
+      #section2 {
+        background-color: #8b2e25;
+      }
+
+      #section3 {
+        background-color: #787254;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="#section0" onclick="scrollToSection(1)">About Me!</a>
+      <a href="#section1" onclick="scrollToSection(2)">Performance</a>
+      <a href="#section2" onclick="scrollToSection(3)">Future Goals</a>
+      <a href="#section3" onclick="scrollToSection(4)">Contacts</a>
     </div>
-  </section>
 
-  <section id="section1">
-    <h2>Performance</h2>
-    <p>Explore the outstanding performance that sets the Honda Civic apart from the rest.</p>
-  </section> 
+    <section id="section0">
+		<img src="20231004_113102.png">
+      <div>
+     <h1 style="text-align: center; margin-top: -150px;">Welcome to my Personal Website!</h1>
+        <p>Welcome! </p>
+      </div>
+    </section>
 
-  <section id="section2">
-    <h2>Fuel Efficiency</h2>
-    <p>Learn about the impressive fuel efficiency that makes the Honda Civic an economic choice.</p>
-  </section>
+    <section id="section1">
+      <h2>Performance</h2>
+      <p>Explore the outstanding performance that sets the Honda Civic apart from the rest.</p>
+    </section>
 
-  <section id="section3">
-    <h2>Conclusion</h2>
-    <p>Wrap up your journey with a compelling conclusion on why the Honda Civic is the ideal choice for everyone.</p>
-  </section>
+    <section id="section2">
+      <h2>Fuel Efficiency</h2>
+      <p>Learn about the impressive fuel efficiency that makes the Honda Civic an economic choice.</p>
+    </section>
 
-  <script>
-    function scrollToSection(sectionIndex) {
-      const sections = document.querySelectorAll('section');
-      sections[sectionIndex].scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
-</body>
+    <section id="section3">
+      <h2>Conclusion</h2>
+      <p>Wrap up your journey with a compelling conclusion on why the Honda Civic is the ideal choice for everyone.</p>
+    </section>
+
+    <script>
+      function scrollToSection(sectionIndex) {
+        const sections = document.querySelectorAll('section');
+        sections[sectionIndex].scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    </script>
+  </body>
 </html>
