@@ -6,17 +6,18 @@
         margin: 0;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
+        font-size: 20px;
       }
 
       a {
-        color: white;
+        color: white; 
         text-decoration: none;
         padding: 25px 55px;
         display: inline-block;
       }
 
       #navbar {
-        background-color: #333;
+        background-color: black;
         position: fixed;
         width: 100%; 
       }
@@ -27,7 +28,7 @@
       }
 
       section {
-        height: 70vh;
+        height: 65vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -39,14 +40,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        padding: 0 30px;
+        padding: 20px;
         box-sizing: border-box;
       }
 
       #section0 h1 {
         color: white;
         width: 100%;
+        height: 150;
       }
 
       #section0 img {
@@ -57,7 +58,20 @@
       #section1 {
         background-color: darkred;
       }
-
+        #section1 h1
+      {
+        color: white;
+        width: 60%;
+        height: 600;
+        font-size: 30px;
+      }
+     
+   #section1 p  {
+        color: white;
+        width: 200%;
+        height: 400;
+        font-size: 20px;
+      }
       #section2 {
         background-color: #8b2e25;
       }
@@ -70,31 +84,44 @@
   <body>
     <div id="navbar">
       <a href="#section0" onclick="scrollToSection(1)">About Me!</a>
-      <a href="#section1" onclick="scrollToSection(2)">Performance</a>
+      <a href="#section1" onclick="scrollToSection(2)">Education</a>
       <a href="#section2" onclick="scrollToSection(3)">Future Goals</a>
       <a href="#section3" onclick="scrollToSection(4)">Contacts</a>
     </div>
 
     <section id="section0">
-		<img src="20231004_113102.png">
+		<img src="me.png">
       <div>
-     <h1 style="text-align: center; margin-top: -150px;">Welcome to my Personal Website!</h1>
-        <p>Welcome! </p>
-      </div>
-    </section>
+     <h1 style="text-align: center; margin-top: -50px;">Welcome to my Personal Website!</h1>
+        <p>Hi there, My name is Samuel Lam. Welcome to my wesbite that is made about me! </p>
+
+
+      <h2>Brief About Me:</h2>
+      <p>I am 18 years old and currently a year 2 student at University of Waterloo studying Global Business and digital arts!</p>
+    </div>
+
+</section>
 
     <section id="section1">
-      <h2>Performance</h2>
-      <p>Explore the outstanding performance that sets the Honda Civic apart from the rest.</p>
+  <h1 style="text-align: center">About me:</h1>
+        <p>Greetings! I'm Samuel Lam, an 18-year-old student navigating the exciting world of Global Business and Digital Arts at the University of Waterloo. 
+          I immigrated from Hong Kong to Canada in 2013 and love the weather here!
+          Beyond studying, I life a pretty ordinary life, I am very outgoing and I usually hangout with friends on my free time 
+      		and go shopping with my parents! </p>
+      
+<h2>My Interests</h2>
+  <p>Here, you can talk about your hobbies, activities you enjoy, or anything that reflects your personal interests. 
+    Feel free to share more about the things that make you unique and bring joy to your life!</p>
+
     </section>
 
     <section id="section2">
-      <h2>Fuel Efficiency</h2>
+      <h2>Future Goals</h2>
       <p>Learn about the impressive fuel efficiency that makes the Honda Civic an economic choice.</p>
     </section>
 
     <section id="section3">
-      <h2>Conclusion</h2>
+      <h2>Hobbies</h2>
       <p>Wrap up your journey with a compelling conclusion on why the Honda Civic is the ideal choice for everyone.</p>
     </section>
 
