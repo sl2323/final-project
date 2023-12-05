@@ -16,7 +16,7 @@
         color: white; 
         text-decoration: none;
         padding: 25px 55px;
-        display: inline-block;
+        display: inline-block; 
       }
 
       #navbar {
@@ -26,7 +26,7 @@
       }
 
       #navbar a:hover {
-        background-color: white;
+        background-color: white; 
         color: black;
       }
 
@@ -37,10 +37,8 @@
       }
 
       #section0 {
-        background-color: grey;
-        display: flex;
-        padding: 20px;
-
+ background-image: url("gallex.jpg");
+  
       }
 
       #section0 h1 {
@@ -102,7 +100,7 @@
       }
 
       #section3 {
-        background-color: #787254;
+        background-color: darkgreen;
       }
      #section3 h1 {
         color: white;
@@ -114,7 +112,7 @@
          width: 400
       }
  			 #section3 p {
-  			color: white;
+  			color: white; 
   			font-size: 20px;
          	 height: 400;
 }
@@ -150,14 +148,18 @@
 
     <section id="section1">
   <h1 style="text-align: center">About me:</h1>
-        <p>Greetings! I'm Samuel Lam, an 18-year-old student navigating the exciting world of Global Business and Digital Arts at the University of Waterloo. 
-          I immigrated from Hong Kong to Canada in 2013 and love the weather here!
-          Beyond studying, I life a pretty ordinary life, I am very outgoing and I usually hangout with friends on my free time 
-      		and go shopping with my parents! </p>
+        <p>Hi again! My name is Samuel Lam, an 18-year-old student in Arts program Global Business and Digital Arts
+				 at the University of Waterloo. 
+          I immigrated from Hong Kong to Canada Ontario in 2013 and have always loved it here. 
+          I occasionally visit Hong Kong every few years just to hangout with my relatives again.
+          Beyond studying, I life a pretty normal life, I often hangout with friends on my free time 
+      		or go shopping with my parents! </p>
       
 <h2>My Interests:</h2>
-  <p>My intersts and hobbies throughout my life has always been about cars! I love driving, going on drives 
-      and even exploring Car Meets. My favorite car right now is a <a href="https://en.wikipedia.org/wiki/BMW_M4"">BMW M4</a>. 
+  <p>My intersts and hobbies throughout my life has always been about cars! When I was little, I always have toy
+    cars in my hand whereever I go. Since I got my license on my 16th Birthday, I love driving, going on drives 
+      and even exploring Car Meets. My dream car right now is a <a href="https://en.wikipedia.org/wiki/BMW_M4"">BMW M4</a>. 
+        It is stylish and a really nice sports car!
         My intersts has expanded over the years and I
     love traveling and exporing different places and cultures around the world.
       I also try to keep myself in shape and sometimes go workout with my friends.</p>
@@ -174,7 +176,7 @@
      <img src="boobby.jpg" alt="Bobbbbyy">
       <img src="lambo.jpg" alt="Lambo">
       <img src="artg.jpg" alt="Art Gallary">
-   </div>
+   </div> 
 </section>
  
     <section id="section3">
@@ -187,16 +189,30 @@
         These upcoming years feel like a great mix of professional and personal growth, and I can't wait to make the most of every opportunity.
         If you would like to reach out to me email me at <a href="mailto:s23lam@uwaterloo.ca"> s23lam@uwaterloo.ca </a>
         </p>
-          <img src="msp.png" alt="Art Gallary">
+          <img src="msp.png" alt="Map of Europe"> 
+        <!--
+			image from: https://www.researchgate.net/figure/Map-of-Europe-showing-names-of-countries-which-have-member-agencies-in-EuroGOOS-and-the_fig1_241294772
+-->
     </section>
- 
-    <script>
+ <!--
+Code copied from: https://www.browserstack.com/guide/browser-compatible-smooth-scrolling-in-css-javascript
+Author: BrowswerStack
+Name: Smooth Scrolling in CSS javascript
+Description:Scroll to section
+Date retrieved: Dec 04 2023
+-->
+
+<!-- Copied code starts -->
+
+   <script>
       function scrollToSection(sectionIndex) {
         const sections = document.querySelectorAll('section');
         sections[sectionIndex].scrollIntoView({
-          behavior: 'smooth'
         });
       }
     </script>
+
+<!-- Copied code ends -->
+ 
   </body>
 </html>
